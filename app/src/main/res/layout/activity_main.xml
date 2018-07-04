@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:id="@+id/fullScreen"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ekrani"
+        android:layout_height="match_parent"
+        android:layout_marginRight="88dp">
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+        <SurfaceView
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+            <TextView
+                android:text="*REC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recording"
+                android:layout_gravity="bottom"
+                android:visibility="gone"
+                android:background="@android:color/holo_red_dark" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/takepic"
+            android:id="@+id/takePic"
+            android:layout_weight="1"
+            android:layout_marginLeft="22dp"
+
+            />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/startvideo"
+            android:id="@+id/takeVideo"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="12dp"/>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/stopvideo"
+            android:id="@+id/stopVideo"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+
+            />
+
+        <Switch
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mode"
+            android:layout_marginRight="25dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/web" />
+
+</RelativeLayout>
