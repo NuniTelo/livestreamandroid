@@ -1,3 +1,3 @@
 # livestreamandroid
 sjcam project android
-This project implemnt VLC to an android app.
+This project implement VLC to an android app.
